@@ -452,3 +452,10 @@
                         welcometxt.innerText=`welcome, ${currentUser.name}`;
                         rendertodo();
                     }
+                  window.addEventListener("DOMContentLoaded", () => {
+                     if (!isLoggedIn) {
+                      showsignup();
+                    }
+                 });
+
+
