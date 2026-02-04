@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="rating" content="adult">
+        <meta name="theme-color" content="#fff">
+        <meta name="robots" content="index,follow">
+        <meta name="description" content="kunal ki awosome html website">
+        <meta name="author" content="kunal khokhar">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="revised-after" content="7days">
+        <meta name="generator" content="vscode">
+        <meta name="language" content="en">
+        <meta name="copyright" content="This is kunal's website © 2025">
+        <title>Experimental website</title>
+        <link rel="stylesheet" href="todo.css">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+<div class="alltodo">
+         <section id="signupform">
+                <h3>signup</h3>
+                <input type="text" id="sname" placeholder="enter name">
+                <input type="email" id="semail" placeholder="enter email">
+                <input type="password" id="spassword" placeholder="enter password">
+
+                <p id="signupmsg"></p>
+                 <button id="signupbtn">signup</button>
+
+                <p>
+                    have an account
+                    <a href="#" id="gologin">gologin</a>
+                </p>
+             </section>
+             <section id="loginform">
+                <h3>login</h3>
+                <input type="email" id="lemail" placeholder="enter email">
+                <input type="password" id="lpassword"  placeholder="enter password">
+
+                <p id="loginmsg"></p>
+
+                 <button id="loginbtn">login</button>
+
+                 <p>
+                    <a href="#" id="goforgotpass">forgot password</a>
+                </p>
+
+                <p>
+                    create account
+                    <a href="#" id="gosignup">gosignup</a>
+                </p>
+             </section>
+
+             
+             <section id="todosection">
+                <h3>todo-list</h3>
+                
+                <p id="welcometxt"></p>
+                 <p>search todo</p>
+                <input type="text" id="search" placeholder="search todo"><br><br>
+                <div>
+                <button id="all">all</button>
+                <button id="completed">completed</button>
+                <button id="pending">pending</button>
+                <button id="markall">mark-all</button>
+                <button id="removemarkall">remove mark-all</button>
+                </div>
+
+                <input type="text" id="todoinput" placeholder="enter-todo">
+
+                <button id="todobtn">addtodo</button>
+                <ul id="todolist"></ul>
+
+                <button id="logoutbtn">logout</button>
+                <button id="resetbtn">reset</button>
+             </section>
+
+             <section id="admin">
+                <h3>welcome admin 🥸</h3>
+                <p id="admintxt"></p>
+                <ul id="adminlist"></ul>
+                <button id="logoutadmin">logout admin</button>
+             </section>
+             <section id="changepass">
+                <h3>change password</h3>
+                <input type="password" id="oldpass" placeholder="old password">
+                <input type="password" id="newpass" placeholder="newpasword">
+                <input type="password" id="confirmpass" placeholder="confirmpassword">
+                
+                <p id="passmsg"></p>
+                <button id='changepassbtn'>changepassword</button>
+                <ul id="passlist"></ul>
+             </section>
+             <section id="fpassword">
+                <h4>forgot password</h4>
+
+                <input type="email" id="femail" placeholder="enter regesterd email">
+                <input type="password" id="npassword" placeholder="enter password">
+                <input type="password" id="cpassword" placeholder="confirm password">
+                <p id="fmsg"></p>
+
+                <p>
+                    <a href="#" id="back">back login</a>
+                </p>
+                <button id="forgotpassbtn">reset password</button>
+             </section>
+              <script src="todo.js"></script>
+              </div>
+
+       </body>
+         </html>
