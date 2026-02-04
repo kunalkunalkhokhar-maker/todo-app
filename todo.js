@@ -457,7 +457,7 @@
                         loginform.style.display='none';
                         signupform.style.display='none';
                         admin.style.display='none';
-                        changepass.style.display='block';
+                        changepass.style.display='none';
                         fpassword.style.display='none';
                         welcometxt.innerText=`welcome, ${currentUser.name}`;
                         rendertodo();
@@ -475,6 +475,7 @@
                       showsignup();
                     }
                  });
+
 
 
 
