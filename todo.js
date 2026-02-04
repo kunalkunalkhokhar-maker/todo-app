@@ -104,7 +104,7 @@
                     e.preventDefault();
                   showconfirmpass();
                 });
-                gotodo.addEventListener('clcik',(e)=>{
+                gotodo.addEventListener('click',(e)=>{
                   e.preventDefault();
                   showtodo();
                 });
@@ -475,6 +475,7 @@
                       showsignup();
                     }
                  });
+
 
 
 
