@@ -44,6 +44,8 @@
                 const passmsg=document.getElementById('passmsg');
                 const changepassbtn=document.getElementById('changepassbtn');
                 const passlist=document.getElementById('passlist');
+                const goconfirmpassword=document.getElementById('goconfirmpassword');
+                const gotodo=document.getElementById('gotodo');
 
                 const femail=document.getElementById('femail');
                 const npassword=document.getElementById('npassword');
@@ -97,6 +99,14 @@
                 pendingbtn.addEventListener('click',(e)=>{
                     currentfilter='pending';
                     rendertodo();
+                });
+                goconfirmpassword.addEventListener('click',(e)=>{
+                    e.preventDefault();
+                  showconfirmpass();
+                });
+                gotodo.addEventListener('clcik',(e)=>{
+                  e.preventDefault();
+                  showtodo();
                 });
 
                 signupbtn.addEventListener('click',()=>{
@@ -452,10 +462,19 @@
                         welcometxt.innerText=`welcome, ${currentUser.name}`;
                         rendertodo();
                     }
+                    function showconfirmpass(){
+                      loginform.style.display='none';
+                      signupform.style.display='none';
+                      todosection.style.display='none';
+                      fpassword.style.display='none';
+                      changepass.style.display='block';
+                      admin.style.display='none';
+                    }
                   window.addEventListener("DOMContentLoaded", () => {
                      if (!isLoggedIn) {
                       showsignup();
                     }
                  });
+
 
 
